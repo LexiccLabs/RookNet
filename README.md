@@ -25,7 +25,9 @@ NEO Protocol Implementation of Ancient Chess Concepts using Oracles and Ontologi
 
 ## Challenges we ran into
 
-- Lack of knowledge on DotNet Framework
+- Limited knowledge on DotNet Framework
+- Limited Tokensets on NEO Protocol
+- Limited DAO Support on NEO Protocol
 
 ## Accomplishments that we're proud of
 
