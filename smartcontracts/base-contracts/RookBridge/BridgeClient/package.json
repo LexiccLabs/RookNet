@@ -1,0 +1,41 @@
+{
+  "name": "collatclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --fix src/*",
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "checklint": "eslint src/*"
+  },
+  "author": "",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "@binance-chain/javascript-sdk": "^3.0.2",
+    "@cityofzion/neon-api": "^4.8.0",
+    "@cityofzion/neon-core": "^4.8.0",
+    "@cityofzion/neon-js": "^4.8",
+    "@types/node": "^14.0.4",
+    "@types/nodemailer": "^6.4.0",
+    "@types/redis": "^2.8.21",
+    "@types/ws": "^7.2.4",
+    "axios": "^0.21.1",
+    "nodemailer": "^6.4.6",
+    "redis": "^3.0.2",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.2",
+    "@types/jest": "^25.2.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0"
+  }
+}

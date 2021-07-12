@@ -1,0 +1,47 @@
+name: CollatClient
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./collatClient
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '11.x'
+    - run: npm ci
+    - run: npm run build
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./collatClient
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '11.x'
+    - run: npm ci
+    - run: npm run checklint
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./collatClient
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '11.x'
+    - run: npm ci
+    - run: npm test
