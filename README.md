@@ -1,5 +1,5 @@
 # RookNet
-NEO Protocol Implementation of Ancient Chess Concepts using Odd Oracles and Ontological Tokens
+NEO Protocol Adaptation of Ancient Chess Concepts using Odd Oracles and Ontological Tokens
 
 ## Inspiration
 
