@@ -1,12 +1,13 @@
 # RookNet
-NEO Protocol Implementation of Ancient Chess Concepts using Oracles and Ontological Tokens
+NEO Protocol Implementation of Ancient Chess Concepts using Odd Oracles and Ontological Tokens
 
 ## Inspiration
 
 - Five Dimensional Chess Games
 - Fisher Random Chess Games
 - Fisher Fast Chess Games
-- Flamingo N3 Project
+- SmartBNB Bridge for NEO
+- Flamingo NEO N3 Project
 - NEO Protocol Examples
 
 ## What it does
@@ -44,4 +45,3 @@ NEO Protocol Implementation of Ancient Chess Concepts using Oracles and Ontologi
 - Integration with a Wallet
 - Implementation of ZKP
 - Implementation of HTLC
-
