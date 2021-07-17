@@ -58,7 +58,31 @@ namespace NeoNftProject.Actors
                             db.Update(token);
                             db.SaveChanges();
 						}
-                        else if (type == "birth")
+                        else if (type == "forward")
+                        {
+                            var mintTokenNotification = notification.GetNotification<MintTokenNotification>();
+                            var token = new Token(); 
+                            token.Agility = (int)mintTokenNotification.Agility;
+                            token.AttackSpeed = (int)mintTokenNotification.AttackSpeed;
+                            token.CriticalStrike = (int)mintTokenNotification.CriticalStrike;
+
+                            db.Add(token);
+                            db.SaveChanges();
+                        }
+			
+			 else if (type == "backward")
+                        {
+                            var mintTokenNotification = notification.GetNotification<MintTokenNotification>();
+                            var token = new Token(); 
+                            token.Agility = (int)mintTokenNotification.Agility;
+                            token.AttackSpeed = (int)mintTokenNotification.AttackSpeed;
+                            token.CriticalStrike = (int)mintTokenNotification.CriticalStrike;
+
+                            db.Add(token);
+                            db.SaveChanges();
+                        }
+			
+			else if (type == "diagonal")
                         {
                             var mintTokenNotification = notification.GetNotification<MintTokenNotification>();
                             var token = new Token(); 
