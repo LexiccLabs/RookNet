@@ -21,13 +21,13 @@ namespace NeoNftProject.Controllers
 			this.mainService = service;
 		}
 
-		[HttpGet("auction")]
+		[HttpGet("game")]
 		public IActionResult Auctions()
 		{
 			return this.Ok(this.mainService.GetAuctions());
 		}
 
-		[HttpPost("auction")]
+		[HttpPost("game")]
 		public IActionResult CreateAuction([FromBody]CreateAuctionInputModel model)
 		{
 			var id = this.mainService.CreateAuction(model);
@@ -45,7 +45,7 @@ namespace NeoNftProject.Controllers
 			return this.Ok(id);
 		}
 
-		[HttpPatch("auction")]
+		[HttpPatch("game")]
 		public IActionResult UpdateAuction([FromBody]UpdateAuctionModel model)
 		{
 			var auction = this.mainService.UpdateAuction(model);
@@ -58,7 +58,7 @@ namespace NeoNftProject.Controllers
 			return this.Ok(auction);
 		}
 
-		[HttpPost("address")]
+		[HttpPost("result")]
 		public IActionResult CreateAddress([FromBody]CreateAddressInputModel model)
 		{
 			var id = this.mainService.CreateAddress(model.Address);
