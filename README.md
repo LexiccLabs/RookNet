@@ -20,8 +20,8 @@ NEO Protocol Adaptation of Ancient Chess Concepts using Odd Oracles and Ontologi
 
 ## How we built it
 
-- DotNet Core SDK Version 3.1 Installation
-- DotNet Build of Flamingo Contracts
+- .NET Core SDK Version 3.1 Installation
+- .NET Build of Flamingo Contracts
 - NEO Protocol Reference Contracts
 
 ## Challenges we ran into
